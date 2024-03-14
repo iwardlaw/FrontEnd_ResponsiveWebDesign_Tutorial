@@ -1,0 +1,377 @@
+/* #region Boilerplate */
+
+/*
+	Condensed Universal Reset
+	Available at <https://perishablepress.com/a-killer-collection-of-global-css-reset-styles/>
+*/
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+	background-color: #fde3c2;
+}
+
+body.test {
+	background-color: #dda;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+h2, h3, h4 {
+	color: #333;
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+blockquote {
+	margin: 0 0 1rem;
+	padding: 0 1rem;
+	border-left: 4px solid #ccc;
+}
+
+a {
+	color: #f90;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img, embed, object, video {
+	max-width: 100%;
+}
+
+.autocrop-container {
+	overflow: hidden;
+}
+
+img.autocrop {
+	display: block;
+	max-width: auto;
+}
+
+/* #endregion Boilerplate */
+
+
+.page {
+	margin: 36px auto;
+	width: 90%;
+	max-width: 960px;
+}
+
+.page > header, .page > footer {
+	text-align: center;
+  background-color: #333;
+  color: #eee;
+}
+
+.page > header {
+	padding: 30px 0 15px;
+}
+
+.page > footer {
+	padding: 30px 0;
+}
+
+.page > header a:hover, .page > footer a:hover {
+	text-decoration: none;
+}
+
+.page > header h1 {
+	font-family: "Agency FB";
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+.clearfix {
+	overflow: hidden;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#main-logo {
+	background-color: #f90;
+	float: none;
+	width: 16.875%;  /* 162px / 960px */
+	min-width: 100px;
+	margin: 0 auto 10px;
+}
+
+#main-logo a {
+	color: inherit;
+}
+
+#main-logo-img {
+	display: block;
+}
+
+.nav-primary {
+	padding: 1.2em 1em 1em;
+	position: relative;
+	top: 0;
+}
+
+.nav-primary li {
+	display: inline;
+	width: 40%;
+	padding: 0 2.329192547%;  /* 15px / 644px */
+	font-size: 1.1em;
+}
+
+.nav-primary li:nth-child(odd) {
+	float: left;
+	clear: left;
+	margin-left: 5%;
+}
+
+.nav-primary li:nth-child(even) {
+	float: right;
+	clear: right;
+	margin-right: 5%;
+}
+
+.nav-primary a {
+	display: block;
+	padding: 0.55em;
+}
+
+.welcome {
+	margin-bottom: 1.5em;
+	background-color: #fcfcfc;
+}
+
+#hero-img {
+	height: 37.76041667vw;  /* 290px / 768px */
+	max-height: 368.583px;  /* Full height at 960px wide. */
+	background: #333 url("../img/hero-01.jpg") center/cover no-repeat;
+}
+
+#welcome-title {
+	color: #eee;
+	background-color: #333;
+	font: 1.5em/1.5em "Agency FB";
+	padding-left: 3.125%;  /* 30px / 960px */
+}
+
+#welcome-content {
+	width: 93.75%;  /* 900px / 960px */
+	margin: 0 auto;
+	padding-bottom: 1em;
+}
+
+main {
+	padding: 20px 0;
+	background: #f8f5f2 url("../img/sample-2col-bg.png") repeat-y;
+}
+
+.blog {
+	margin: 0 auto 53px;
+	width: 93.75%;  /* 900px / 960px */
+}
+
+.blog h2 {
+	font-size: 1.5em;
+  font-family: "Agency FB";
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #f90;
+  border-bottom: 1px solid #666;
+	padding: 0.8em 5.333333333%;  /* 5.3% = 48px / 900px */
+}
+
+.blog article {
+	padding: 0 5.331539493%;  /* 33.7833px / 633.65px */
+}
+
+.blog article header {
+	margin-bottom: 0.8em;
+}
+
+.blog article .post-date {
+	width: 4.3125em;
+	float: left;
+	margin-left: 0;
+	margin-right: 1em;
+  background-color: #333;
+  color: #eee;
+  font-family: "Agency FB";
+  font-weight: bold;
+  text-align: center;
+}
+
+.blog article .post-date .post-date-day {
+	font-size: 2.5em;
+}
+
+.blog article .post-date .post-date-month-year {
+	text-transform: uppercase;
+}
+
+.blog article h3 {
+	font-size: 1.3em;
+	margin-bottom: 0.1em;
+}
+
+.blog article .author {
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+.blog article blockquote, .blog article figure {
+	float: right;
+	margin-bottom: 0.5em;
+	margin-left: 2.553191489%;  /* 12px / 470px */
+	width: 49.14893617%;  /* 231px / 470px */
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-style: oblique;
+}
+
+.blog article blockquote {
+	color: #f90;
+	font-size: 1.3em;
+}
+
+.blog article figure {
+	border: 1px solid #aaa;
+	padding: 1.298701299%;  /* 3px / 231px */
+	background-color: #e8ebf3;
+}
+
+.blog article figcaption {
+	color: #333;
+	padding: 0 2.164502165%;  /* 5px / 231px */
+	font-size: 0.95em;
+}
+
+.blog aside {
+	margin-top: 53px;
+}
+
+.blog .related-entries {
+	margin: 0 auto;
+	width: 69.78851964%;  /* 231px / 331px */
+}
+
+.blog .related-entry {
+	display: block;
+	font-size: 0.9em;
+}
+
+.blog .related-entry:hover {
+	text-decoration: none;
+}
+
+.blog .related-entry:not(:last-child) {
+	border-bottom: 1px solid #666;
+	margin-bottom: 1em;
+}
+
+.blog .related-entry h4 {
+	color: #f90;
+}
+
+.blog .related-entry p {
+	color: #000;
+}
+
+@media screen and (min-width: 520px) {
+	body.test {
+		background-color: #aed;
+	}
+
+	.nav-primary {
+		top: 0.5em;
+	}
+
+	.nav-primary li:nth-child(n) {
+		float: unset;
+		clear: unset;
+		margin-left: unset;
+		margin-right: unset;
+	}
+
+	.nav-primary a {
+		display: unset;
+		padding: unset;
+	}
+
+	.page > header {
+		padding: 30px 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	body.test {
+		background-color: #eaa;
+	}
+
+	#main-logo {
+		float: left;
+		margin-left: 0.7em;
+		margin-bottom: 0;
+		width: 16.875%;  /* 162px / 960px */
+	}
+
+	.nav-primary {
+		top: 1em;
+	}
+
+	.nav-primary li {
+		font-size: 1.2em;
+		padding: 0 4.094827586%;  /* 38px / 928px */
+	}
+
+	main {
+		background-position-x: 63.11111111%;  /* 63.1% = 568px / 900px */
+	}
+
+	.blog .blog-content {
+		float: left;
+		width: 62.88888889%;  /* 566px / 900px */
+	}
+
+	.blog article {
+		padding: 0 8.480565371%;  /* 8.5% = 48px / 566px */
+	}
+
+	.blog aside {
+		float: right;
+		width: 36.77777778%;  /* 331px / 900px */
+	}
+}
+
+@media screen and (min-width: 1168px) {
+	body.test {
+		background-color: #fde3c2;
+	}
+
+	.blog article .post-date {
+		margin-left: -16.59574468%;  /* -78px / 470px */
+		margin-right: 0;
+	}
+}

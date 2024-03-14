@@ -1,0 +1,108 @@
+width <= 520 | >= any:
++ body.test (
+  background-color: #dda;
+)
++ .page > header {
+  padding-bottom: 15px;
+)
++ .nav-primary (
+  top: 0;
+)
++ .nav-primary li (
+  width: 40%;
+  font-size: 1.1em;
+)
++ .nav-primary li:nth-child(odd) (
+  float: left;
+  clear: left;
+  margin-left: 5%;
+)
++ .nav-primary li:nth-child(even) (
+  float: right;
+  clear: right;
+  margin-right: 5%;
+)
++ .nav-primary a (
+  display: block;
+  padding: 0.55em;
+)
+
+width <= 768 | >= 520:
++ body.test (
+  background-color: #aed;
+)
++ #main-logo (
+  float: none;
+  margin: 0 auto 10px;
+  width: 22.22222222%;  /* 150px / 675px */
+  min-width: 100px;
+)
++ .nav-primary (
+  top: 0.5em;
+)
++ .nav-primary li (
+  padding: 0 2.329192547%;  /* 15px / 644px */
+)
++ main (
+  background-position-x: 0;
+)
++ .blog .blog-content (
+  float: unset;
+  width: unset;
+)
++ .blog article (
+  padding: 0 5.331539493%;  /* 33.7833px / 633.65px */
+)
++ .blog aside (
+  float: unset;
+  width: unset;
+  margin-top: 53px;
+)
+
+width <= 1168 | >= 768:
++ body.test (
+  background-color: #eaa;
+)
++ .blog article .post-date (
+  margin-left: 0;
+  margin-right: 1em;
+)
+
+width <= any | >= 1168:
++ body (
+  background-color: #fde3c2;
+)
++ .page > header (
+  padding: 30px 0;
+)
++ #main-logo (
+  float: left;
+  margin-left: 0.7em;
+  margin-bottom: 0;
+  width: 16.875%  /* 162px / 960px */
+)
++ .nav-primary (
+  top: 1em;
+)
++ .nav-primary li (
+  font-size: 1.2em;
+  padding: 0 4.094827586%;  /* 38px / 928px */
+)
++ main (
+  background-position-x: 63.11111111%;  /* 63.1% = 568px / 900px */
+)
++ .blog .blog-content (
+  float: left;
+  width: 62.88888889%;  /* 566px / 900px */
+)
++ .blog article (
+  padding: 0 8.480565371%;  /* 8.5% = 48px / 566px */
+)
++ .blog article .post-date (
+  margin-left: -16.59574468%;  /* -78px / 470px */
+  margin-right: 0;
+)
+- .blog aside (
+  float: right;
+  width: 36.77777778%;  /* 331px / 900px */
+)
