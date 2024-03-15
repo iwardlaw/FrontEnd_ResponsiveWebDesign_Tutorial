@@ -1,4 +1,4 @@
-function mediaQuery_maxWidth1168px_onChange(query) {
+function mediaQuery_maxWidth520px_onChange(query) {
 	let blogHeader = document.querySelector(".blog header");
 	if(!blogHeader?.classList) {
 		return;
@@ -12,6 +12,6 @@ function mediaQuery_maxWidth1168px_onChange(query) {
 	}
 }
 
-let mediaQuery_maxWidth1168px = window.matchMedia("(max-width: 1168px)");
+let mediaQuery_maxWidth520px = window.matchMedia("(max-width: 520px)");
 
-mediaQuery_maxWidth1168px.addEventListener("change", () => mediaQuery_maxWidth1168px_onChange(mediaQuery_maxWidth1168px));
+mediaQuery_maxWidth520px.addEventListener("change", () => mediaQuery_maxWidth520px_onChange(mediaQuery_maxWidth520px));
