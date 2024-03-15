@@ -1,4 +1,4 @@
-function mediaQuery_minWidth1168px_onChange(query) {
+function mediaQuery_maxWidth1168px_onChange(query) {
 	let blogHeader = document.querySelector(".blog header");
 	if(!blogHeader?.classList) {
 		return;
@@ -14,4 +14,4 @@ function mediaQuery_minWidth1168px_onChange(query) {
 
 let mediaQuery_maxWidth1168px = window.matchMedia("(max-width: 1168px)");
 
-mediaQuery_maxWidth1168px.addEventListener("change", () => mediaQuery_minWidth1168px_onChange(mediaQuery_maxWidth1168px));
+mediaQuery_maxWidth1168px.addEventListener("change", () => mediaQuery_maxWidth1168px_onChange(mediaQuery_maxWidth1168px));
